@@ -1,0 +1,519 @@
+/* css variables */
+:root {
+    --bg-color: #F5F5F5;
+    --content-bg-color: #FFFFFF;
+    --input-color:#F6F6F6;
+    --blue-main: #1F50FF;
+    --blue-secondary: #4B71F9;
+    --black-color: #000000;
+    --black-primary: #303030;
+    --black-secondary: #555555;
+    --footer-color: #555555;
+    --size-10: 10px;   
+    --size-12: 12px;
+    --size-14: 14px;
+    --size-16: 16px;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semi-bold: 600;
+}
+@font-face {
+    font-family: 'Work Sans', sans-serif;
+    src: url(../fonts/WorkSans-Medium.ttf)
+}
+@font-face {
+    font-family: 'Futura', sans-serif;
+    src: url(../fonts/futura\ medium\ bt.ttf)
+}
+
+
+
+body {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--bg-color);
+}
+
+.left-bar {
+    padding: 18px 30px 110px 25px;
+  }
+
+.log-in > a {
+    font-size: var(--size-16);
+    font-weight: var(--fw-medium);
+    line-height: 21.25px;
+    font-family: 'Futura', sans-serif;
+    color: #1F50FF;
+}
+
+.log-in {
+    border-bottom: 1px solid #EBEBEB;
+    padding-bottom: 18.5px;
+}
+
+.profile-info {
+    padding-block: 20px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.profile-info > img {
+    border-radius: 50%;
+}
+
+.profile-info > span {
+    font-family: 'Work Sans', sans-serif;
+    font-size: var(--size-16);
+    line-height: 19px;
+    font-weight: var(--fw-regular);
+}
+
+.first-paragraph {
+    font-family: 'Work Sans', sans-serif;
+    color: var(--blue-main);
+    font-size: var(--size-12);
+    line-height: 14px;
+    font-weight: var(--fw-medium);
+    border-bottom: 1px solid #EBEBEB;
+    padding-bottom: 15px;
+}
+
+.personal-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.personal-info  div span:first-child {
+    display: block;
+    margin-bottom: 12px;
+    font-size: var(--size-16);
+    font-weight: var(--fw-semi-bold);
+    line-height: 19px;
+    font-family: 'Work Sans', sans-serif;
+    columns: var(--black-primary);
+
+}
+
+.personal-info  div span:not(first-child) {
+    font-size: var(--size-12);
+    font-weight: var(--fw-regular);
+    font-family: 'Work Sans', sans-serif;
+    line-height: 14px;
+    columns: var(--black-primary);
+}
+
+.profile-wrapper {
+    padding-block: 22px 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.profile-icons {
+    display: flex;
+    gap: 17px;
+}
+
+.profile-icons img {
+    cursor: pointer;
+}
+
+.profile-icons span {
+    font-size: var(--size-14);
+    font-weight: var(--fw-regular);
+    font-family: 'Work Sans', sans-serif;
+    line-height: 16.5px;
+    columns: var(--black-primary);
+}
+
+.left-bar > h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: var(--size-16);
+    font-weight: var(--fw-semi-bold);
+    line-height: 19px;
+    color: #303030;
+    padding-block: 22px;
+}
+
+.photo-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    padding-bottom: 33px;
+}
+
+.photo-wrapper div {
+    display: flex;
+    gap: 12px;
+}
+
+.photo-wrapper div h3 {
+    font-weight: var(--fw-semi-bold);
+    font-family: 'Work Sans', sans-serif;
+    font-size: var(--size-14);
+    line-height: 16px;
+    color: var(--black-primary)
+
+}
+
+.photo-wrapper div h3 span {
+    font-size: 14px;
+    font-weight: var(--fw-medium);
+}
+
+.photo-wrapper div img {
+    cursor: pointer;
+}
+
+.see-more {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.see-more span {
+    font-size: var(--size-14);
+    line-height: 16px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: var(--fw-medium);
+}
+
+/* right bar */
+
+.right-bar {
+    padding: 21px 11px 203px 22px;
+}
+
+.right-bar-header {
+    font-family: 'Work Sans', sans-serif;
+    font-size: var(--size-12);
+    font-weight: var(--fw-semi-bold);
+    font-size: 12px;
+    color: var(--black-primary);
+    margin-bottom: 12px;
+}
+
+.town-wrapper div a {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: var(--fw-medium);
+    font-size: 8px;
+    color: var(--blue-main);
+    margin-top: 49px;
+    line-height: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.town-wrapper, .birthday-container {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.birthday-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 9px;
+}
+
+
+.birthday-container p, .contact-wrapper div h4 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: var(--fw-medium);
+    font-size: var(--size-12);
+    line-height: 12px;
+}
+
+.contact-wrapper div h4 {
+    font-size: var(--size-10);
+}
+
+.contact-flex {
+    display: flex;
+    gap: 60px;
+    margin-block: 18px 32px;
+}
+
+.contact-profiles {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-profiles div {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+}
+
+.contact-profiles div span, .contact-seemore {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: var(--fw-medium);
+    font-size: var(--size-10);
+    line-height: 12px;
+    color: var(--black-secondary);
+}
+
+.contact-seemore {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-block: 19px 16px;
+    cursor: pointer;
+}
+
+/* main page */
+
+.main {
+    padding-top: 33px;
+    padding-inline: 35px;
+}
+
+.input-wrapper {
+    display: flex;
+    gap: 26px;
+    border-bottom: 1px solid #EBEBEB;
+    padding-bottom: 25px;
+}
+
+input {
+    padding: 21px 404px 19px 19px;
+    background-color: #F6F6F6;
+    border-radius: 28px;
+    border: none;
+}
+
+.mail-icons {
+    display: flex;
+    margin-block: 12px;
+    gap: 20px;
+}
+
+.mail-icons div span {
+    font-size: var(--size-12);
+    line-height: 14px;
+    font-weight: var(--fw-regular);
+    font-family: 'Work Sans', sans-serif;
+}
+
+.mail-icons div img {
+    cursor: pointer;
+    margin-left: 6px;
+}
+
+.button > button {
+    padding: 11px 20px;
+    background-color: var(--blue-main);
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-weight: var(--fw-regular);
+    font-size: var(--size-14);
+    font-family: 'Work Sans', sans-serif;
+    line-height: 16.5px;
+    cursor: pointer;
+    margin-left: 104px; 
+}
+
+/* card 1 */
+.card1 {
+    margin-top: 71px;
+}
+
+.profile-main-card {
+    display: flex;
+    gap: 19px;
+}
+
+.profile-main-card div {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.profile-main-card span:first-child {
+    font-family: 'Work Sans', sans-serif;
+    font-size: var(--size-14);
+    font-weight: var(--fw-medium);
+    line-height: 16.5px;
+    color: var(--black-primary);
+}
+
+.profile-main-card span:not(first-child) {
+    font-family: 'Work Sans', sans-serif;
+    font-size: var(--size-10);
+    font-weight: var(--fw-medium);
+    line-height: 12px;
+    color: var(--blue-secondary);
+}
+
+.card1 > p {
+    margin-top: 11px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: var(--size-14);
+    font-weight: var(--fw-regular);
+    line-height: 16.5px;
+    color: var(--black-secondary);
+    margin-bottom: 12px ;
+}
+
+.social-icons {
+    padding-block: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icons div {
+    display: flex;
+    gap: 24px;
+}
+
+.social-icons div img {
+    cursor: pointer;
+}
+
+.social-icons a {
+    font-family: 'Work Sans', sans-serif;
+    font-size: var(--size-12);
+    font-weight: var(--fw-medium);
+    line-height: 14px;
+    color: var(--blue-main);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.profile-main-card2 {
+    display: flex;
+    gap: 24px;
+    padding-top: 37px;
+}
+
+/* card 2 */
+
+.profile-main-card2 div > span{
+    font-family: 'Work Sans', sans-serif;
+    font-size: var(--size-14);
+    font-weight: var(--fw-medium);
+    line-height: 16.5px;
+    color: var(--black-primary);
+}
+
+.profile-main-card2 div div span {
+    font-family: 'Work Sans', sans-serif;
+    font-size: var(--size-10);
+    font-weight: var(--fw-medium);
+    line-height: 12px;
+    color: var(--blue-secondary);
+}
+
+.profile-main-card2 div div p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: var(--size-14);
+    font-weight: var(--fw-regular);
+    line-height: 16.5px;
+    color: var(--black-secondary);
+    margin-top: 12px;
+}
+
+.profile-main-card2 div img {
+    margin-left: 20px;
+}
+
+.card-2-amanda {
+    margin-top: 7px;
+}
+
+.card2 > img {
+margin-top: 18px;
+}
+
+/* header */
+.header {
+    padding-inline: 35px;
+    padding-block: 15px 12px;
+}
+
+.header-grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.header-grid-wrapper div img {
+    cursor: pointer;
+}
+
+.home-flex {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.header-input {
+    padding-block: 12px;
+    padding-inline: 22px 198px
+}
+
+.header-input::placeholder {
+    padding-left: 40px;
+}
+
+.header-form {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    left: 22px;
+    top: 9px
+}
+
+.menu-wrapper {
+    display: flex;
+    gap: 27px;
+    text-align: center;
+}
+
+.menu-wrapper img {
+    width: 30px;
+}
+
+/* grid */
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    "left head head"
+    "left main right";
+    grid-template-columns: 24.% 60% 15.5%;
+    grid-template-rows: 7% 93%;
+    column-gap: 23px;
+    row-gap: 40px;
+}
+
+.left-bar, .header, .main, .right-bar {
+    background-color: var(--content-bg-color);
+    border-radius: 10px;
+}
+
+.left-bar {
+    grid-area: left;
+}
+
+.header {
+    grid-area: head;
+}
+
+.main {
+    grid-area: main;
+}
+
+.right-bar {
+    grid-area: right;
+}
